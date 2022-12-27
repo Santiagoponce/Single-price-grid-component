@@ -1,0 +1,44 @@
+
+@media screen and (max-width:500px)
+{
+
+
+
+main
+{
+    grid-template-areas: 
+    "invitation_area"
+    "Subscription_area"
+    "whyUs_Area"
+;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows:min-content 1fr 1fr;
+}
+
+.invitation
+{
+    border-radius: 10px 10px 0 0;
+}
+
+.invitation__description
+{
+    color: var(--Grayish_Blue);
+    line-height: 1.9rem;
+}
+
+.subscription
+{
+    border-radius: 0 0 0 0;
+}
+
+.whyUs
+{
+   border-radius: 0 0 10px 10px; 
+}
+
+
+
+
+
+}

@@ -1,0 +1,131 @@
+:root
+{
+  
+
+--Cyan: hsl(179, 62%, 43%);
+--Bright_Yellow: hsl(71, 73%, 54%);
+font-family: 'Karla', sans-serif;
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-color:var(--Light_Gray);
+    align-items: center;
+}
+
+main
+{
+    display: grid;
+    max-width: 635px;
+    height: auto;
+    grid-template-areas: 
+        "invitation_area invitation_area"
+        "Subscription_area whyUs_Area"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:4.55fr 5.43fr;
+}
+.invitation
+{
+    padding: 2rem;
+    border-radius: 10px 10px 0 0;
+
+    background-color: white;
+    grid-area:invitation_area;
+}
+.invitation__title
+{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+
+}
+.invitation__subtitle
+{
+    color: var(--Bright_Yellow);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.invitation__description
+{
+    color: var(--Grayish_Blue);
+    line-height: 1.5rem;
+}
+.subscription
+{
+    background-color:var(--Cyan);
+    grid-area:Subscription_area;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 0px 0px 0px 10px;
+
+}
+.subscription__type
+{
+   font-weight: 700;
+   font-size: 1.1rem;
+}
+
+.subscription__price
+{
+    display: flex;
+    align-items: center;
+}
+.subscription__price :first-child
+{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-inline-end: 1rem;
+}
+
+.subscription__button
+{
+    border: none;
+    color:white;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow:0em 0em 2em rgba(0, 0, 0, 0.311);
+    font-weight: 700;
+    padding: 1rem;
+    background-color: var(--Bright_Yellow);
+}
+.whyUs
+{
+    background-color:var(--Cyan);
+    filter: brightness(1.07);
+    padding: 2rem;
+    border-radius: 0px 0px 10px 0px;
+    grid-area:whyUs_Area;
+}
+
+
+.whyUs__title
+{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.whyUs__list
+{
+    color: var(--Light_Gray);
+    font-size: .9rem;   
+}
+
+.whyUs__list li
+{
+line-height: 1.2rem;
+}
+
