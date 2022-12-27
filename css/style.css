@@ -101,6 +101,13 @@ main
     padding: 1rem;
     background-color: var(--Bright_Yellow);
 }
+
+.subscription__button:hover
+{
+
+    background-color:  hsl(71, 83%, 45%);
+}
+
 .whyUs
 {
     background-color:var(--Cyan);
